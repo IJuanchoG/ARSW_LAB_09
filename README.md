@@ -42,10 +42,30 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
 **Preguntas**
 
 * ¿Qué es un Azure Function?
+Azure Functions es una solución para integrar pequeños desarrollos con eventos de otros sistemas que permita responder de manera simple. 
+Permite desarrollar con mayor eficacia platafomas sin servidor basadas en evento.
 * ¿Qué es serverless?
+Es un modelo de ejecución en el que el proveedor de la nube se responsabiliza por ejecutar fragmentos de código mediante asignación dinámica de los recursos.
+
 * ¿Qué es el runtime y que implica seleccionarlo al momento de crear el Function App?
+Proceso host del Azure Webjob que escucha eventos, recopila y envía información interaccionando con las Function.
+
 * ¿Por qué es necesario crear un Storage Account de la mano de un Function App?
-* ¿Cuáles son los tipos de planes para un Function App?, ¿En qué se diferencias?, mencione ventajas y desventajas de cada uno de ellos.
+Esto se debe a que Functions se basa en Azure Storage para ciertas operaciones como lo son la administración de disparadores y Registros de ejecución de funciones. 
+* ¿Cuáles son los tipos de planes para un Function App?, ¿En qué se diferencias?, mencione ventajas y desventajas de cada uno de ellos
+Principalmente se basan en *consumo de recursos* y en *Ejecuciones* para definir los precios. 
+![image](https://user-images.githubusercontent.com/49318314/98157990-3b1c9500-1ea8-11eb-9eb6-0519adcb1101.png)
+
+Los planes pueden ser los siguientes:
+- Ejecuciones
+El costo está baasado en el número total de peticiones ejecutadas por mes de todas las funciones.
+- Consumo de recursos
+EL costo está basado en la medida de cuanto consumo de recursos se realizó en GB-s.
+- Premium Plan
+Provee mecanimos de escalamiento y features basado en número de eventos.
+![image](https://user-images.githubusercontent.com/49318314/98158048-55ef0980-1ea8-11eb-99f8-b43486dc35f5.png)
+-Functions Proxies
+Mismos costos que el Premium.
 * ¿Por qué la memoization falla o no funciona de forma correcta?
 * ¿Cómo funciona el sistema de facturación de las Function App?
 * Informe
